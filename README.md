@@ -9,7 +9,7 @@ ssh-keygen -t ed25519 -f latex_id_ed25519 -C "optional comment here"
 # Build 
 For building the image locally :
 ```bash
-docker build -t latex_b0x:$(date +'%Y.%m.%d') .
+docker build -t latexb0x:$(date +'%Y.%m.%d') .
 ```
 
 # SSH setup
