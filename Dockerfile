@@ -24,10 +24,10 @@ EXPOSE 9001
 RUN sed -i 's/#Port 22/Port 9001/' /etc/ssh/sshd_config && \
     sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
-    # echo 'ForceCommand cd /root/texland && exec "$SHELL"' >> /etc/ssh/sshd_config
+    # echo 'ForceCommand cd /root/latexb0x && exec "$SHELL"' >> /etc/ssh/sshd_config
 
 # Set working directory
-WORKDIR /root/texland
+WORKDIR /root/latexb0x
 
 # Set the entrypoint
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

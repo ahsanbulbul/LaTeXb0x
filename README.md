@@ -1,5 +1,5 @@
 # LaTeXb0x
-A local solution for using latex using containerization.
+A local solution for using containerization latex.
 
 # Generate SSH keys
 ```bash
