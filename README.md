@@ -1,7 +1,8 @@
 # LaTeXb0x
-A local solution for using containerization latex.
+A containerized solution for latex.
 
 # Generate SSH keys
+SSH key pair will be used to access the container
 ```bash
 ssh-keygen -t ed25519 -f latex_id_ed25519 -C "optional comment here"
 ```
@@ -20,7 +21,7 @@ Host latexb0x
   Hostname localhost
   User root
   Port 9001
-  IdentityFile <path>/latex_id_ed25519
+  IdentityFile <path_to_private_key>/latex_id_ed25519 # private key
 ```
 
 # How to use:

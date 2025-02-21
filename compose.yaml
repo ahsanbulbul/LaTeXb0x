@@ -9,6 +9,6 @@ services:
     ports:
       - "9001:9001"
     volumes:
-      - .latexbox/latex_id_ed25519.pub:/root/.ssh/latex_id_ed25519.pub  # Make sure to place your public key
-      - .latexbox/texland:/root/texland  # Mount the directory for your working files (adjust the path as needed)
+      - .latexbox/latex_id_ed25519.pub:/root/.ssh/latex_id_ed25519.pub  # Link your public key
+      - ~/Documents/latexb0x/:/root/latexb0x # Mount the directory for your working files (adjust the path as needed)
     restart: unless-stopped  # Restart policy
